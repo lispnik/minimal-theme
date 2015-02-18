@@ -30,7 +30,7 @@
 
 (let* ((class '((class color) (min-colors 89)))
        (foreground "grey20")
-       (background "white")
+       (background nil)
        (cursor "black")
        (border "grey90")
        (minibuffer cursor)
