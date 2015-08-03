@@ -66,7 +66,7 @@
 
    ;; faces
    `(font-lock-builtin-face ((,class (:foreground ,foreground :weight bold))))
-   `(font-lock-constant-face ((,class (:foreground ,foreground :weight bold))))
+   `(font-lock-constant-face ((,class (:inherit (font-lock-comment-face) :slant italic))))
    `(font-lock-keyword-face ((,class (:foreground ,foreground :weight bold))))
    `(font-lock-type-face ((,class (:foreground ,foreground :slant italic))))
    `(font-lock-function-name-face ((,class (:foreground ,foreground :weight bold))))
@@ -76,6 +76,8 @@
    `(font-lock-comment-face ((,class (:foreground ,comment))))
    `(font-lock-doc-face ((,class (:inherit (font-lock-comment-face)))))
    `(font-lock-string-face ((,class (:foreground ,foreground :foreground ,string))))
+
+   `(font-lock-warning-face ((,class (:foreground ,foreground :underline t :weight bold))))
 
    ;; faces used by isearch
    `(isearch ((,class (:foreground ,foreground :background ,region :weight normal))))
